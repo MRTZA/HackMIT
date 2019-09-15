@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Pacifico&display=swap" rel="stylesheet">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -14,7 +15,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #444;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -27,6 +28,7 @@ body {
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar a:hover {
@@ -42,16 +44,25 @@ body {
 }
 
 .openbtn {
-  font-size: 20px;
+  /*font-size: 20px;
   cursor: pointer;
   background-color: #111;
   color: white;
   padding: 10px 15px;
-  border: none;
+  border: none;*/
+
+  background-color: #444;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Open Sans', sans-serif;
+  border-style: none;
+
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #111;
 }
 
 #main {
@@ -70,16 +81,16 @@ body {
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a onclick='food()'>Food</a>
+  <a onclick='sleep()'>Sleep</a>
+  <a onclick='exer()'>Exercise</a>
+  <a onclick="location.href = '/udata';">Trends</a>
 </div>
 
 <div id="main">
-  <button class="openbtn" onclick="openNav()">☰ Toggle Sidebar</button>  
-  <h2>Collapsed Sidebar</h2>
-  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+  <button class="openbtn" onclick="openNav()">☰ Feed It</button>  
+  <!--<h2>Feed It</h2>
+  <p></p>-->
 </div>
 
 <script>
@@ -92,6 +103,30 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
+
+function food(){}
+
+function sleep(){
+  var txt;
+  var person = prompt("Please enter how many hours you have slept:", "8");
+  if (person == null || person == "") {
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+function exer(){
+  var txt;
+  var person = prompt("Please enter how many steps you have taken today: ", "10000");
+  f (person == null || person == "") {
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+
+}
+
 </script>
    
 </body>

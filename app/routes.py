@@ -23,3 +23,7 @@ def userin(name=None):
 @app.route('/ulogin/')
 def udata(name=None):
     return render_template('ulogin.html')
+
+@app.route('/uanimation/')
+def uanimation(name=None):
+    return render_template('webgl_loader_fbx.html')

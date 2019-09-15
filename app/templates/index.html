@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Pacifico&display=swap" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("/static/homedog.jpg");
+  min-height: 100%;
+  max-width:100%;
+}
+
+.bgimg-2 {
+  background-image: url("/static/collegedog.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("/static/health.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  /*padding: 18px;*/
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+p {
+  font-style: italic;
+}
+
+.caption span.border button {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Open Sans', sans-serif;
+  border-style: none;
+}
+
+#homebutton {
+  padding: 18px;
+  border-style: none;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border" id="homebutton"><button onclick="location.href = '/ulogin';">Feed It</button></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">The Challenge</h3>
+  <p>Shouldering many taxing academic burdens and pressures, college students often relegate their health to the margins. A study of more than 200 undergraduate students demonstrated that there is a significant decline in physical activity levels during the transition between high school and college. Many college students select their food based on convenience, taste, and time instead of nutritional value. In addition, the average students gets around 6 hours of sleep, well below the needed 7-9 hours of sleep.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">About</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>This website encourages healthy habits by correlating input information to the growth and care of a virtual dog. Initially, the virtual pet starts out as a puppy and requires more care and time, specifically around two months which is the time it takes to form a new habit. Gathering data from the user’s phone health analytics app, the website tracks if the user has been meeting healthy goals. If so, the user’s dog will grow and thrive and show signs of it such as high levels of energy. The converse is true; the dog will display some symptoms of unhealthy choices like lack of energy or negative moods. Thus, the user has an incentive to in order not to harm their little doggo. </p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Benefits and Risks</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>When students neglect the mentioned health factors, it can result in many severe consequences and risks including but not limited to: impaired brain development, poor coordination, increased negative feelings, increased risk of heart disease, stroke, type-2 diabetes, poor weight management, obesity, and hypertension. While on the other hand if students incoroporate good habits, they can reap the benefits including but not limited to improved grades, better memory, lowered risk of obesity, relieve stress, improve concentration, increased energy levels, and lower high cholesterol.
+
+
+</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border" id="homebutton"><button onclick="location.href = '/ulogin';">Feed It</button></span>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("homebutton").innerHTML = "Done";
+}
+</script>
+
+</body>
+</html>
+
